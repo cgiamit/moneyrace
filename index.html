@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Race Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="gameArea">
+    <div id="player"></div>
+  </div>
+
+  <div id="scoreBoard">
+    <p>Score: <span id="score">0</span></p>
+    <p>Health: <span id="health">100%</span></p>
+    <p>Time: <span id="time">60</span>s</p>
+  </div>
+
+  <div id="gameOverScreen">
+    <h1>Game Over!</h1>
+    <p>Your Score: <span id="finalScore"></span></p>
+    <button id="restartBtn">Restart Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>

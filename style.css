@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Game area */
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+    border: 1px solid black;
+}
+
+/* Player styling */
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* Scoreboard */
+#scoreBoard {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Coins and obstacles */
+.coin, .obstacle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.coin {
+    background-color: yellow;
+}
+
+.obstacle {
+    background-color: red;
+}
+
+/* Game over screen */
+#gameOverScreen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#gameOverScreen h1 {
+    margin-bottom: 20px;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
